@@ -1,4 +1,4 @@
-import Portada from "@/components/Portada";
+import Portada from "@/components/portada/Portada";
 import Image from "next/image";
 
 export default function Home() {

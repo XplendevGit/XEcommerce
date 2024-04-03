@@ -7,6 +7,8 @@ import Spline from '@splinetool/react-spline';
 
 import { Button } from "@/components/ui/button"
 
+import style from './portada.module.css'
+
 const Portada = () => {
     const [loading, setLoading] = useState(true);
 

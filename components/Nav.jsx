@@ -14,7 +14,7 @@ const Nav = () => {
 
 
   return (
-    <nav className='flex gap-[36px]'>
+    <nav className='flex md:gap-[36px] space-x-2'>
       {links.map((link, index) => (
         <Link 
           href={link.path} 
@@ -22,7 +22,7 @@ const Nav = () => {
           className={`cursor-pointer ${selectedLink === link.path ? 'text-primary' : 'text-white'}`}
           onClick={() => setSelectedLink(link.path)}
         >
-          <h2>{link.name}</h2>
+          <h2 className="text-xs md:text-base">{link.name}</h2>
         </Link>
       ))}
     </nav>
