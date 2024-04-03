@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
+    images: {
+        remotePatterns: [
+        {
+            hostname: 'cdn.sanity.io',
+        },
+        {
+            hostname: 'i.postimg.cc'
+        }
+    ]
+    }
+}

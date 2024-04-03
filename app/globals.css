@@ -1,33 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Road+Rage&family=Russo+One&family=Spinnaker&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* GLOBALS STYLES */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    @apply box-border;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold
+  }
+  h1 {
+    @apply text-5xl md:text-[80px] leading-none russo-one-regular
+  }
+  h2 {
+    @apply russo-one-regular
+  }
+  h3 {
+    @apply  mukta-malar-semibold 
+  }
+  h4 {
+    @apply text-[8px]
+  }
+  a {
+    @apply font-bold uppercase leading-none hover:text-primary transition-all duration-200
+  }
+
+  .btn-primary {
+    @apply py-3 px-8 text-center bg-primary rounded-full text-white transition-all duration-200 ease-out hover:scale-105 text-xl md:text-2xl gurajada-regular uppercase
+  }
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-hover transition-all
+  }
+  .btn-terciary {
+    @apply bg-secondary hover:bg-secondary-hover transition-all
+  }
+  .btn-fondo {
+    @apply bg-fondo hover:bg-fondo/90 text-primary transition-all
+  }
+  .btn-fondosecondary {
+    @apply bg-fondo hover:bg-fondo/90 text-primary transition-all
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* LAST UNITIES SWIPER STYLES*/
+.popular-productos-slider .swiper-wrapper {
+  @apply !h-[500px];
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+   .swiper-pagination-bullet {
+    @apply bg-primary;
+   }
+
+
+/* GOOGLE FONT STYLES*/
+
+.mukta-malar-extralight {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mukta-malar-light {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mukta-malar-regular {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mukta-malar-medium {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mukta-malar-semibold {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mukta-malar-bold {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mukta-malar-extrabold {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.gurajada-regular {
+  font-family: "Gurajada", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spinnaker-regular {
+  font-family: "Spinnaker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.road-rage-regular {
+  font-family: "Road Rage", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
