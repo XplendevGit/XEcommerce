@@ -18,7 +18,7 @@
     @apply font-bold
   }
   h1 {
-    @apply text-5xl md:text-[80px] leading-none russo-one-regular
+    @apply text-4xl md:text-[80px] leading-none russo-one-regular
   }
   h2 {
     @apply russo-one-regular

@@ -1,6 +1,6 @@
- /* DISEÑO CSS GRID INICIO*/
+ /* DISEÑO CSS GRID PORTADA*/
 
-            /* DISEÑO CSS GRID INICIO*/
+            /* DISEÑO CSS GRID PORTADA*/
             @media screen and (min-width: 0px) and (max-width: 640px) {
                 .contenedor-portada{
                     display: grid;
@@ -21,7 +21,7 @@
 
               }
                       
-                      /* INICIO  para tabletas (426px a 768px) */
+                      /* PORTADA  para tabletas (426px a 768px) */
                       @media screen and (min-width: 641px) and (max-width: 768px) {
                         .contenedor-portada{
                             display: grid;
