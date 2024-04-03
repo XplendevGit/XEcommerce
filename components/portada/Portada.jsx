@@ -34,8 +34,8 @@ const Portada = () => {
           <div className="w-full h-full flex flex-col justify-center lg:pb-32 space-y-1">
              {/* Textos */}
              <h2 className="text-xl md:text-2xl text-primary">Profesional</h2>
-             <h2 className="text-3xl md:text-5xl text-white" style={{ textShadow: '0px 0px 8px #252734' }}>EXCLUSIVE</h2>
-             <h1 className="xl:tracking-[0.8em] lg:tracking-[0.3em] md:tracking-[0.2em]" style={{ textShadow: '8px 4px 4px rgba(0,0,0,0.5)' }}>EXPERIENCES</h1>
+             <h2 className="text-3xl md:text-5xl text-white" style={{ textShadow: '0px 0px 8px #252734' }}>E-COMMERCE</h2>
+             <h1 className="xl:tracking-[0.9em] lg:tracking-[0.4em] md:tracking-[0.2em]" style={{ textShadow: '8px 4px 4px rgba(0,0,0,0.5)' }}>EXPERIENCE</h1>
 
             {/* Boton de Grupo */}
             <div className="flex items-center gap-4 pt-4 mx-auto sm:mx-0">
