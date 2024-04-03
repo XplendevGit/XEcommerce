@@ -27,7 +27,7 @@ const Portada = () => {
         <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between">
                {/* Primer Texto sobre Subtitulo */}
-                <div className="w-full xl:max-w-[580px] md:h-[820px] flex flex-col justify-center items-center lg:items-start bg-red-400">
+                <div className="w-full xl:max-w-[580px] md:h-[820px] flex flex-col justify-center items-center lg:items-start">
                     <h2 className="text-center xl:text-left text-primary">Profesional
                     </h2>
                     <h2 className="xl:text-5xl text2xl text-white" style={{ textShadow: '0px 0px 8px #252734' }}> 
