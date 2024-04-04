@@ -7,6 +7,8 @@ import CartSlidebar from '@/components/cart/CartSlidebar'
 
 import Image from 'next/image'
 
+import { useState, useEffect } from 'react' 
+
 import { CgShoppingBag } from 'react-icons/cg'
 import { useShoppingCart } from 'use-shopping-cart'
 
@@ -15,16 +17,38 @@ import { LuShoppingCart } from "react-icons/lu";
 
 const Header = () => {
   const { cartCount, handleCartClick } = useShoppingCart();
+
+  const [isMediumScreen, setIsMediumScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMediumScreen(window.innerWidth >= 415);
+    };
+
+    // Ejecutar la función de verificación de tamaño de pantalla al cargar la página y al cambiar el tamaño de la ventana
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    // Limpiar el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+  const getImageUrl = () => {
+    return isMediumScreen ? "https://i.postimg.cc/P5qXwVY7/xcommerce-logo-transparent.png" : "https://i.postimg.cc/L5ZPRrb6/logo-xcommerce-xs.png";
+  };
+
   return (
     <header className="bg-fondoterciary shadow-lg sticky top-0 py-6 z-40">
         <div className="container mx-auto flex justify-between items-center">
             {/* Container Logo */}
-            <div className="flex w-[150px] h-auto">
+            <div className="flex w-auto h-auto">
             <Link href='/'>
                 <Image 
                 alt='Imagen' 
-                src="https://i.postimg.cc/P5qXwVY7/xcommerce-logo-transparent.png" 
-                className="w-auto h-auto" 
+                src={getImageUrl()}
+                className="w-auto sm:h-auto" 
                 layout='fit'
                 width={150}
                 height={150}

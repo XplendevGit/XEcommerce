@@ -1,6 +1,6 @@
 import {client} from '@/sanity/lib/client'
-import ProductosCategorias from '@/app/detalleproductos/ProductosCategorias';
 import React from 'react'
+import FiltradoProductos from '@/app/detalleproductos/FiltradoProductos';
 
 const getData = async () => {
   const query = `*[_type == 'producto'] {
@@ -24,7 +24,7 @@ const DetalleProductos = async () => {
   const productos = await getData()
   console.log(productos)
   return (
-    <ProductosCategorias productos={productos}>Nuestros Productos</ProductosCategorias>
+    <FiltradoProductos productos={productos}>Nuestros Productos</FiltradoProductos>
   )
 }
 

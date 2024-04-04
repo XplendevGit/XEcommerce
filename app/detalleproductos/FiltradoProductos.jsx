@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label'
 import Producto from '@/components/interface/Producto'
 import { Slider } from '@/components/ui/slider'
 
-const ProductosCategorias = ({ productos }) => {
+const FiltradoProductos = ({ productos }) => {
 
   const [categoria, setCategoria] = useState('todos')
   const [filteredProductos, setFilteredProductos] = useState([])
@@ -120,4 +120,4 @@ const ProductosCategorias = ({ productos }) => {
   )
 }
 
-export default ProductosCategorias
+export default FiltradoProductos
