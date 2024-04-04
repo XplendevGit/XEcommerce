@@ -67,7 +67,7 @@ const Producto = ({ producto }) => {
             </div>
         </div>
         {/* Detalles del Producto */}
-        <div className="w-full h-full flex flex-col text-center justify-center mb-10">
+        <div className="w-full h-auto flex flex-col text-center justify-center ">
 
         <h1 className="text-lg">
         {producto.nombre}
