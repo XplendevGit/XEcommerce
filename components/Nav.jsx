@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 const links = [
     { name: 'Inicio', path: '/' },
-    { name: 'Productos', path: '/Productos' },
-    { name: 'Nosotros', path: '/Nosotros' },
+    { name: 'Productos', path: '/detalleproductos' },
+    { name: 'Nosotros', path: '/nosotros' },
   ]
 
 const Nav = () => {
