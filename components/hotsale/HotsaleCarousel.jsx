@@ -17,8 +17,8 @@ const HotsaleCarousel = ({productos}) => {
     breakpoints={{
       640: {slidesPerView: 1},
       768: {slidesPerView: 2},
-      960: {slidesPerView: 3},
-      1440: {slidesPerView: 4},
+      960: {slidesPerView: 4},
+      1440: {slidesPerView: 6},
     }}
     pagination={{
       clickable: true,

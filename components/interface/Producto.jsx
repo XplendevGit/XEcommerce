@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CgEye, CgShoppingBag } from 'react-icons/cg'
 
+import { FaEye } from "react-icons/fa";
+
 import React from 'react'
 
 
@@ -25,16 +27,16 @@ const Producto = ({ producto }) => {
 
   return (
     <div className="group">
-        <div className="h-[328px] mb-5 p-4 overflow-hidden relative">
+        <div className=" mx-12 bg-fondosecondary lg:max-h-auto mb-5 p-4 overflow-hidden relative">
             <div className="w-full h-full group-hover:bg-primary-10 transition-all duration-300 flex justify-center items-center">
                 {/* Badge */}
                 {popularProductosCat && (
-                    <div className="absolute top-8 left-8 bg-primary text-white px-3 text-sm uppercase font-medium">
-                        Popular
+                    <div className="absolute top-10 -left-8 bg-primary text-white px-4 text-sm uppercase font-medium transform -rotate-90 transition-all duration-300">
+                        Nuevo!
                     </div>
                 )}
                 <Image 
-                className='lg:max-w-auto max-w-[320px]'
+                className='lg:max-w-auto max-w-[240px]'
                 src={producto.imagenes && producto.imagenes[0] ? urlFor(producto.imagenes[0]).url() : '/https://i.postimg.cc/ZR1gbyZ3/loading.png'}
                 width={productoWidth}
                 height={productoHeight}
@@ -46,19 +48,19 @@ const Producto = ({ producto }) => {
 
                 <Link href={`/product/${producto.slug}`}>
                     <button className="btn-icon btn-primary">
-                        <CgEye />
+                        <FaEye />
                     </button>
                 </Link>
             </div>
         </div>
         {/* Detalles del Producto */}
-        <div className="w-full h-full flex flex-col text-center justify-center">
+        <div className="w-full h-full flex flex-col text-center justify-center mb-10">
 
         <h1 className="text-lg">
         {producto.nombre}
             
         </h1>
-        <h3 className="mb-1">{producto.descripcion}</h3>
+        <h3 className="mb-1 text-secondary">{producto.descripcion}</h3>
         <h1 className="text-xl text-primary">
             ${formatPrice(producto.valor)}
         </h1>

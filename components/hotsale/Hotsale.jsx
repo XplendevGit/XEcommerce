@@ -26,7 +26,7 @@ const Hotsale = async () => {
     const producto = await getData()
     console.log(producto)
   return (
-    <div className="w-full h-screen container py-24">
+    <div className="w-full h-screen min-h-[930px] container py-24">
         {/* Contenedor Principal */}
         <div className="w-full h-full flex flex-col py-24">
 
@@ -34,11 +34,11 @@ const Hotsale = async () => {
             <div className="w-full h-full text-center flex flex-col justify-center py-24">
             
               <h1 className="">
-              Hot Sale
+              Nuevos Productos
               </h1>
 
-              <h2 className=" text-secondary">
-              Comentario
+              <h2 className="text-secondary">
+              Escoje el tuyo y llévatelo antes de que se agote!
               </h2>
             
             </div>
