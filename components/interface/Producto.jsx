@@ -27,7 +27,7 @@ const Producto = ({ producto }) => {
 
   return (
     <div className="group">
-        <div className=" mx-12 bg-fondosecondary lg:max-h-auto mb-5 p-4 overflow-hidden relative">
+        <div className=" bg-fondosecondary lg:max-h-auto mb-5 p-4 overflow-hidden relative">
             <div className="w-full h-full group-hover:bg-primary-10 transition-all duration-300 flex justify-center items-center">
                 {/* Badge */}
                 {popularProductosCat && (
