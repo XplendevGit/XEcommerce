@@ -20,7 +20,7 @@ const Portada = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 1000); // Cambia este valor según lo que consideres adecuado
+        }, ); // Cambia este valor según lo que consideres adecuado
         return () => clearTimeout(timer);
     }, []);
 
@@ -39,9 +39,12 @@ const Portada = () => {
 
             {/* Boton de Grupo */}
             <div className="flex items-center gap-4 pt-4 mx-auto sm:mx-0">
-                <button className="btn-primary">
+              <Link href='/detalleproductos'>
+              <button className="btn-primary">
                    Ver Todos los Productos
                 </button>
+              </Link>
+
             </div>
           </div>
 
@@ -61,6 +64,7 @@ const Portada = () => {
                 ) : (
                     <Spline
                         className="h-full w-full"
+                        priority
                         scene="https://prod.spline.design/1lDq57lv7siCHhT1/scene.splinecode"
                         onLoad={handleLoad}
                     />
