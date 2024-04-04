@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductosPage = () => {
   return (
-    <div className=''>
+    <div className='w-full max-h-screen bg-fondoprimary container'>
       Página de Productos
     </div>
   )

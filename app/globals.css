@@ -53,6 +53,7 @@
 /* LAST UNITIES SWIPER STYLES*/
 .popular-productos-slider .swiper-wrapper {
   @apply !h-[500px];
+
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,

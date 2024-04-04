@@ -10,7 +10,8 @@ const links = [
   ]
 
 const Nav = () => {
-  const [selectedLink, setSelectedLink] = useState(null);
+  const [selectedLink, setSelectedLink] = useState('/');
+
 
 
   return (
