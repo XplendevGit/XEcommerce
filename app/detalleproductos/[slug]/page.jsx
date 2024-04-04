@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { client, urlFor} from '@/app/lib/sanity'
+import { client, urlFor} from '@/sanity/lib/client'
 import Image from 'next/image'
-import AddToCart from '@/components/AddToCart'
+import AddToCart from '@/components/cart/AddToCart'
 
 import Link from 'next/link'
 
@@ -63,6 +63,7 @@ const ProductDetails = async ({ params }) => {
                   <h4 className="text-lg font-bold text-accent">${formatPrice(producto.valor)}</h4>
                 </div>
                 <p className="">{producto.descripcion}</p>
+
                 <AddToCart
                 id={producto._id}
                 nombre={producto.nombre}
@@ -70,9 +71,10 @@ const ProductDetails = async ({ params }) => {
                 descripcion={producto.descripcion}
                 imagenes={producto.imagenes}
                 valor={producto.valor}
-                btnStyles='btn btn-accent'
+                btnStyles='btn btn-primary'
                 text='Agregar al Carrito'
-                 />
+                 />                
+              
                </div>
 
                {/* Información */}

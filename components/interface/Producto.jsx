@@ -47,9 +47,19 @@ const Producto = ({ producto }) => {
             {/* btn group */}
             <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center gap-[10px] opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-               
-
-                <Link href={`/detalleproducto/${producto.slug}`}>
+            
+            {/* AddToCart */}
+            <AddToCart 
+                id={producto._id}
+                nombre={producto.nombre}
+                currency={"USD"}
+                descripcion={producto.descripcion}
+                imagenes={producto.imagenes}
+                valor={producto.valor}
+                btnStyles='btn btn-primary'
+                icon={<CgShoppingBag />}
+                />
+                <Link href={`/detalleproductos/${producto.slug}`}>
                     <button className="btn-icon btn-primary">
                         <FaEye />
                     </button>
