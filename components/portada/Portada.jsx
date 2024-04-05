@@ -31,7 +31,7 @@ const Portada = () => {
       {/* DIV 1 */}
         <div className={` ${style['portada-1']}` }>
           
-          <div className="w-full h-full flex flex-col justify-center lg:pb-32 space-y-1">
+          <div className="w-full h-full flex flex-col justify-center xl:pb-32">
              {/* Textos */}
              <h2 className="text-xl md:text-2xl text-primary">Profesional</h2>
              <h2 className="text-3xl md:text-4xl text-white" style={{ textShadow: '0px 0px 8px #252734' }}>E-COMMERCE</h2>
