@@ -40,7 +40,7 @@ const Footer = () => {
          <div className="w-full h-full flex flex-row flex-wrap justify-center items-center bg-blue-400">
           
              <button className="btn btn-primary">
-csacs
+               
              </button>
 
             <button className="btn btn-primary">
